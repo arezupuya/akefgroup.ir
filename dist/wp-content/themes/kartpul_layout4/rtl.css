@@ -1,0 +1,569 @@
+/*
+Theme Name: Kartpul Layout4
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+See http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+@import url("../kartpul/rtl.css");
+
+.left-block {
+    float: right;
+}
+.right-block {
+    float: left;
+    margin-left: 20px !important;
+    margin-right: 0 !important;
+}
+
+.tmpmela-topbar-menu-links {
+    float: left;
+}
+.header-offer {
+    float: right;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+.box-category:after {
+    left: 24px;
+    right: auto;
+}
+.box-category {
+    padding: 16px 50px 16px 57px;
+}
+.blog-carousel .owl-controls .owl-buttons .owl-prev {
+    right: auto;
+    left: 0px;
+}
+.blog-carousel .owl-controls .owl-buttons .owl-next {
+    right: 0px;
+    left: auto;
+}
+.entry-meta span {
+    padding: 0 10px 0 0px;
+}
+.single .entry-main-content, .attachment .entry-main-content, .entry-meta .meta-inner {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.site-footer .widget_product_tag_cloud .title-outer {
+    float: right;
+}
+#horizontalTab .resp-tabs-list {
+    left: 0px;
+    right: auto;
+}
+.woo_categories_list .product-categories > li, .header-category ul > li {
+    float:right;
+}
+.header-category .product-categories > li.cat-item a.mega-hdr-a::before, .header-category .product-categories ul.children > li.cat-item a::before {
+    margin-left: 0;
+    height: 0;
+    width: 0;
+}
+
+
+
+
+
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Black.eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Black.eot%3F') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum)_Black.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum)_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum)_Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Medium.eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Medium.eot%3F') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum)_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Light.eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum)_Light.eot%3F') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum)_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum)_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum)_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot%3F') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/eot/IRANSansWeb(FaNum).eot');
+	src: url('fonts/eot/IRANSansWeb(FaNum).eot%3F') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 600;
+	src: url('fonts/yekan/eot/iranyekanwebboldfanum.eot');
+	src: url('fonts/yekan/eot/iranyekanwebboldfanum.eot%3F') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanwebboldfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanwebboldfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/yekan/eot/iranyekanweblightfanum.eot');
+	src: url('fonts/yekan/eot/iranyekanweblightfanum.eot%3F') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanweblightfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanweblightfanum.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/yekan/eot/iranyekanwebregularfanum.eot');
+	src: url('fonts/yekan/eot/iranyekanwebregularfanum.eot%3F') format('embedded-opentype'),  /* IE6-8 */
+		 url('fonts/yekan/woff/iranyekanwebregularfanum.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('fonts/yekan/ttf/iranyekanwebregularfanum.ttf') format('truetype');
+}
+
+
+.service .style-2 .description {
+    text-align: right;
+}
+.style-2 .service-desc{
+	 text-align: right;
+}
+.cms-banner-item .text2 {
+    font-size: 21px !important;
+  
+}
+
+.box-category {
+    padding: 16px 50px 16px 33px !important;
+}
+.box-category, .sticky-menu .box-category{
+
+	width: 240px !important;
+}
+#categorytab .resp-tabs-list, .categorytab .resp-tabs-list {
+
+    float: right !important;
+
+}
+#categorytab .resp-tabs-container, .categorytab .resp-tabs-container {
+    border-left: unset !important; 
+    border-right: 2px solid #e6e6e6;
+}
+#categorytab .resp-tabs-list li, .categorytab .resp-tabs-list li {
+
+    text-align: right !important;
+}
+#categorytab .resp-tabs-list li .tab-title, .categorytab .resp-tabs-list li .tab-title {
+
+    padding: 0 31px 0 0px !important;
+
+}
+.categorytab .resp-tabs-list li.product-button, #categorytab .resp-tabs-list li.product-button {
+ 
+    text-align: right !important;
+
+}
+span.woocommerce-Price-amount.amount {
+    display: flex;
+    direction: rtl !important;
+
+}
+.static-wrapper.cms-left-text {
+    left: 3% !important;
+
+}
+
+.cms-banner-item .text1 {
+    font-size: 21px !important;
+}
+
+.blog-carousel .owl-controls .owl-buttons .owl-next {
+    left: auto !important;
+    right: 0 !important;
+}
+.blog-posts-content .post-image-outer {
+ 
+    float: right !important;
+
+  
+    margin-left: 15px;
+    margin-right: unset !important;
+}
+.blog-posts-content .post-content-outer {
+    text-align: right !important;
+}
+.post-description {
+
+    text-align: justify;
+    direction: rtl;
+}
+
+#footer-widget-area .static-links-list {
+    direction: ltr;
+}
+.site-footer .widget_product_tag_cloud .title-outer {
+    float: right !important;
+}
+.woocommerce .star-rating, .woocommerce-page .star-rating, .wpb_wl_summary .star-rating{
+	float: right;
+}
+.normal-title:before, .upsells.products > h2:before, .related.products h2:before, .cross-sells > h2:before {
+    right: 0;
+    left: unset !important;
+}
+
+.product-button-hover {
+    background: #fff;
+}
+.mega-menu ul li:first-child a {
+    padding-right: 30px !important;
+    padding-left: 14px !important;
+}
+
+.mega-menu ul li .sub li.mega-hdr a.mega-hdr-a{
+	 padding-left: 30px !important;
+    padding-right: 0 !important;
+    text-align:right;
+}
+.mega-menu ul li .sub-container {
+ 
+    left: auto !important;
+}
+.mega-menu ul .sub li.mega-hdr li a, .mega-menu ul li .sub-container.non-mega li a{
+	padding: 5px 0 !important;
+}
+
+
+.entry-content blockquote {
+    text-align: right;
+}
+
+.page-title .entry-title-main{
+	float: right !important;
+}
+.author-info .author-description{
+	float: right !important;
+}
+.entry-content blockquote {
+    padding: 0 10px 0 80px !important;
+    border-right: 4px solid #000000 !important;
+    border-left: 0 !important;
+}
+.post-navigation a.prev-post {
+    float: left !important;
+}
+
+.post-navigation a.next-post {
+    float: right !important;
+}
+
+.entry-content p {
+
+    direction: rtl;
+}
+
+
+
+.mega-menu ul li .sub li.mega-hdr, .mega-menu ul li .sub-container.non-mega .sub {
+
+    float: right !important;
+
+}
+.sidebar-category-inner li .sub li.mega-hdr a.mega-hdr-a{
+	font-weight: 800 !important;
+}
+
+.header-category .product-categories > li.cat-item a:before, .more-wrap:before {
+    content: "\f104" !important;
+    font-family: "FontAwesome";
+    font-size: 14px;
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    line-height: 15px;
+    color: #555555;
+    margin-left: 16px !important;
+    margin-right: unset !important; 
+}
+.header-search .woocommerce-product-search input[type="submit"], .header-search .search-form #searchsubmit{
+
+	font-weight: inherit;
+}
+.header-search .woocommerce-product-search .search-field, .header-search .search-form .search-field {
+ 
+    font-family: inherit;
+}
+.woocount.loadgridlist {
+
+    font-family: inherit;
+}
+.woocommerce.widget_shopping_cart .total strong {
+    float: right !important;
+}
+.woocommerce .single-product-full #content .product div.entry-summary {
+    margin: 0 4% 0 0 !important;
+}
+.woocommerce div.product form.cart .button, .woocommerce-page div.product form.cart .button {
+
+    font-family: inherit !important;
+}
+.tmpmela_product_nav_buttons .next a:before {
+
+    position: unset !important;
+}
+.woocommerce .entry-summary .compare.button:before, .woocommerce .wcpc_compare_btn_wrap a.added_to_compare:before, .woocommerce .wcpc_compare a.button:before {
+  
+    margin: 0 auto 0 5px !important;
+}
+.woocommerce .summary .product_meta .posted_in, .entry-summary .sku_wrapper, .entry-summary .variations label, .woocommerce .summary .product_meta .tagged_as, .brand {
+ 
+    font-weight: 800 !important;
+ 
+}
+input#submit {
+    font-family: inherit;
+}
+.header-menu-links a {
+    padding: 3px 0;
+    display: block;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+
+#yith-quick-view-content .summary-content {
+    text-align: right;
+}
+#yith-quick-view-content  .star-rating{
+	float: right !important;
+}
+
+.button {
+   font-family: inherit !important;
+}
+.woocommerce #content table.cart td, .woocommerce #content table.cart th, .woocommerce table.cart td, .woocommerce table.cart th, .woocommerce-page #content table.cart td, .woocommerce-page #content table.cart th, .woocommerce-page table.cart td, .woocommerce-page table.cart th{
+	text-align: right !important;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+    float: right !important;
+}
+.woocommerce .col2-set .col-2, .woocommerce-page .col2-set .col-2 {
+    float: left !important;
+    }
+
+input {
+    font-family: inherit;
+}
+.woocommerce #payment ul.payment_methods li, .woocommerce-page #payment ul.payment_methods li{
+	text-align: right !important;
+}
+.header-category .product-categories > li.cat-item a.mega-hdr-a::before, .header-category .product-categories ul.children > li.cat-item a::before{
+	display: none;
+}
+.woocommerce .order_details li, .woocommerce-page .order_details li {
+    float: right !important;
+    margin-right: unset !important;
+    margin-left: 2em;
+
+
+    border-left: 1px dashed #ebebeb;
+    border-right: unset !important;
+    padding-left: 2em;
+    padding-right: unset !important;
+}
+.blog-posts-content .comments-link{
+	direction: rtl;
+}
+.widget_search #searchform .search-field, #primary-sidebar .widget_product_search .search-field, .widget_search #searchform #searchsubmit, #primary-sidebar .widget_product_search input[type="submit"] {
+    float: left !important;
+}
+table.compare-list {
+
+    font-family: 'iranyekan', Arial, Helvetica, sans-serifinherit;
+}
+
+
+.woo_categories_list .product-categories li {
+    text-align: right !important;
+
+}
+.home-category .product-categories > li.cat-item a::before, .more-wrap::before {
+    content: "\f104";
+    font-family: "FontAwesome";
+
+    float: right !important;
+}
+.woocommerce-product-search span.customSelect{
+    text-align: right !important;
+
+}
+.customSelectInner{
+    padding-right: 20px !important;
+}
+.home .sidebar-category {
+  
+    max-width: 236px !important;
+}
+
+
+
+
+
+
+option {
+    font-family: "iranyekan";
+}
+
+@media only screen and (max-width: 979px){
+.site-footer .widget_product_tag_cloud .title-outer {
+    float: none !important;
+}
+.site-info {
+    text-align: right;
+    float: right;
+}
+.cms-banner-item .text1 {
+    font-size: 17px !important;
+}
+.cms-banner-item .text2 {
+    font-size: 15px !important;
+    
+}
+#categorytab .resp-tabs-list li, .categorytab .resp-tabs-list li {
+    width: 50% !important;
+    position: relative;
+    text-align: center !important;
+}
+.categorytab .resp-tabs-list .category-title, #categorytab .resp-tabs-list, .categorytab .resp-tabs-list {
+    width: 100% !important;
+}
+.resp-tabs-list li .tab-title {
+    margin: 0 7px !important;
+    padding: 0 5px !important;
+}
+.categorytab .resp-tabs-list li.product-button, #categorytab .resp-tabs-list li.product-button {
+    padding: 0px 25px;
+    text-align: center !important;
+    margin-top: 0;
+    width: 100% !important;
+}
+
+
+.right-block{
+    margin-left: 0px !important;
+}
+}
+
+@media only screen and (max-width: 767px){
+    .hitarea {
+    left:  10px !important;
+  
+    right: auto !important;
+}
+    .widget_media_image img {
+    width: 100%;
+}
+aside.widget.widgets-follow-us, aside.widget.widget_media_image {
+
+    width: 100%;
+}
+.home-sidebar .widget_product_tag_cloud{
+
+       width: 100%;
+}
+        .service .style-2 .description {
+    text-align: center !important;
+}
+#categorytab .resp-tabs-list li, .categorytab .resp-tabs-list li {
+    text-align: center !important;
+}
+.categorytab .resp-tabs-list li.product-button, #categorytab .resp-tabs-list li.product-button {
+    padding: 0px;
+    text-align: center !important;
+    }
+ #categorytab .resp-tabs-list li .tab-title, .categorytab .resp-tabs-list li .tab-title{
+    padding: 0 !important;
+ }
+ .blog-carousel .owl-controls .owl-buttons .owl-next {
+    left: auto !important;
+    right: 0px !important;
+}
+.blog-posts-content .owl-theme .owl-buttons div {
+    top: 0% !important;
+}
+.widget ul li, .widget.woocommerce.widget_product_categories li {
+    text-align: center !important;
+}
+}
+
+
+@media only screen and (max-width: 379px){
+.style-1.cms-banner-item .text1 {
+    font-size: 12px !important;
+}
+}
+@media only screen and (max-width: 479px){
+.cms-banner-item .text2 {
+    font-size: 13px !important;
+}
+.box-category, .sticky-menu .box-category {
+    width: 25px !important
+}
+.box-category {
+    padding: 16px 50px 16px 14px !important;
+}
+}
+
+
+
+div.pp_pic_holder{
+        direction: ltr;
+}
+div.pp_default .pp_content_container .pp_details {
+
+   display: none !important;
+}
+.pp_gallery{
+      display: none !important;
+}
+.pp_content_container .pp_right {
+    padding-left: 1px !important;
+}
+.pp_content_container .pp_left {
+    padding-right: 1px !important;
+}
+
+
+
+.header-category {
+    position: absolute;
+    float: right;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,144 @@
+/**
+* 8.0 Media Queries
+ * ----------------------------------------------------------------------------
+ */
+@import url("../kartpul/responsive.css");
+
+@media only screen and (min-width: 1201px) and (max-width: 1450px) {
+.header-top-left {
+    width: 17%;
+}
+.header-right {
+    padding: 0;
+    float: left;
+    width: 79%;
+}
+.left-block {
+   width: 20.7% !important;
+}
+.right-block {
+    width: 76.5% !important;
+}
+.right-sidebar-block {
+    width: 907px !important;
+}
+.category-title {
+    padding: 5px 5px 8px 5px;
+}
+#categorytab .resp-tabs-list li .tab-title, .categorytab .resp-tabs-list li .tab-title {
+    padding: 0 0 0 5px;
+}
+#categorytab .resp-tabs-container, .categorytab .resp-tabs-container {
+    width: 72%;
+}
+}
+@media only screen and (max-width: 1200px) {
+.header-right {
+    width: 73%;
+    padding: 35px 0px;
+}
+.header-top-left {
+    width: 21.1%;
+}
+.left-block {
+    width: 100% !important;
+}
+.right-block {
+    width: 100% !important;
+    margin-left: 0px;
+}
+.topbar-outer {
+    display: none;
+}
+.mobile-navigation, .menu-toggle {
+    padding: 3px 0 0 15px;
+}
+.left-sidebar-block {
+    width: 100% !important;
+}
+.right-sidebar-block {
+    width: 100% !important;
+    float: none !important;
+}
+.widget.widgets-leftbanner {
+    border: 0px;
+}
+aside.widget {
+	margin-bottom: 10px;
+}
+.home-sidebar .widget .widget-title {
+    margin: 0 0 10px;
+}
+.blog-posts-content .post-content-outer {
+    text-align: center;
+}
+.box-category, .sticky-menu .box-category {
+    border-bottom: 0;
+}
+.hitarea {
+    right: 10px;
+    top: 12px;
+}
+.home-category {
+    position: absolute;
+}
+.home-category .sidebar-category-inner .cat-parent .children li,
+.home-category .sidebar-category-inner ul.sub-menu li {
+    padding: 0 0 0 10px;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.header-category .sidebar-category-inner .cat-parent .children li, .header-category .sidebar-category-inner ul.sub-menu li {
+    padding: 0 0 0 30px;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.sidebar-category{
+    display: block;
+}
+}
+@media only screen and (max-width: 979px) {
+.header-right {
+    width: auto;
+    padding: 0;
+}
+.header-search .header-toggle {
+    background-image: url("images/megnor/search.svg");
+}
+.site-footer .title-outer::before, .site-footer .toggled-off .title-outer::before {
+    top: 2px;
+}
+.header-top-left {
+    width: 22%;
+}
+.header-search.active .header-toggle {
+    background-image: url("images/megnor/close.svg");
+}
+.header-category {
+    position: absolute;
+    display: none;
+}
+
+}
+@media only screen and (max-width: 767px) {
+.header-top-left {
+   	 width: 30%;
+}
+}
+@media only screen and (max-width: 479px) {
+.widget .title-outer::before, .widget .toggled-off .title-outer::before {
+    top: 2px;
+}
+.site-main {
+    padding: 0;
+}
+.home-category .product-categories > li.cat-item a::before, .more-wrap::before {
+    margin-right: 15px;
+    margin-left: -2px;
+}
+.sidebar-category {
+    height: 365px;
+}
+}
