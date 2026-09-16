@@ -710,7 +710,7 @@ var php_var = {"tmpmela_loadmore":"","tmpmela_pagination":"","tmpmela_nomore":""
 				<a href="../index.html%3Fp=476.html#" title="RSS" class="rss icon"><i class="fa fa-rss"></i></a>
 				<a href="../index.html%3Fp=476.html#" title="Youtube" class="youtube icon"><i class="fa fa-youtube"></i></a>
 		
-						<a href="../index.html%3Fp=476.html#" title="Instagram" class="instagram icon"><i class="fa fa-instagram"></i></a>
+						<a href="https://instagram.com/akefmazda" target="_blank" title="Instagram" class="instagram icon"><i class="fa fa-instagram"></i></a>
 		
 	</li>
 	</ul>
@@ -1005,5 +1005,23 @@ var wc_single_product_params = {"i18n_required_rating_text":"\u0644\u0637\u0641\
 /* ]]> */
 </script>
 <script src='../wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js%3Fver=3.7.0'></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var forms = document.querySelectorAll(".wpcf7-form");
+    forms.forEach(function(form) {
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
+            var name = form.querySelector("[name='your-name']") ? form.querySelector("[name='your-name']").value : "";
+            var subject = form.querySelector("[name='your-subject']") ? form.querySelector("[name='your-subject']").value : "";
+            var message = form.querySelector("[name='your-message']") ? form.querySelector("[name='your-message']").value : "";
+            var waMessage = "نام: " + name + "%0Aموضوع: " + subject + "%0Aپیام:%0A" + message;
+            var waUrl = "https://api.whatsapp.com/send?phone=+989155052700&text=" + waMessage;
+            window.open(waUrl, "_blank");
+        });
+    });
+});
+</script>
 </body>
+
 </html>
